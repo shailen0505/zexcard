@@ -1,0 +1,49 @@
+
+/* card */
+.product{
+  width: 90%;
+  
+  border-radius: 15px;
+}
+.product:hover{
+  /* box-shadow: 0 8px 32px 0 rgba(130, 181, 240, 0.37); */
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+/* Glass */
+.glass {
+    /* background: linear-gradient(90deg, #eeaeca 0%, #94bbe9 100%); */
+    /* background: rgba(221, 220, 220, 0.116); */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    /* border-radius: 10px;
+    border: 1px solid rgba(184, 184, 184, 0.18); */
+  }
+  .shadow-glass{
+    box-shadow: 0 8px 32px 0 rgba(130, 181, 240, 0.37);
+  }
+  /* Colors */
+  .bg-blue-shade{
+    background-color: #f5f8fd;
+  }
+  /* Animation */
+  .lineUp {
+    animation: 2s anim-lineUp ease-out 1;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
